@@ -2,10 +2,6 @@ body {
     background-color: black;
 }
 
-* {
-    outline: red 1px solid;
-}
-
 .main {
     background-color: whitesmoke;
     margin-top: 110px;
