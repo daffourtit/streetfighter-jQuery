@@ -28,7 +28,32 @@ $(document).ready(function() {
         $('.ryu-throwing').hide();
         //$('.hadouken').hide();
         $('.ryu-ready').show();
-    });
+    })
+    
+    //.keydown(function (e) {
+        //if (e.which === '88') {
+            //$('.ryu-still').hide();
+            //$('.ryu-ready').hide();
+            //$('.ryu-posing').show();
+            //console.log('xxxxx');
+        //}
+    //});
+
+});
+
+$(document).keydown(function(e){
+	if(e.which == '88'){
+        $('.ryu-still').hide();
+        $('.ryu-ready').hide();
+        $('.ryu-posing').show();
+           // console.log('you pressed x');
+    }
+    
+	}).keyup(function(e){ //the sample has an x on this line
+    if(e.which == '88'){
+        $('.ryu-posing').hide();
+        $('.ryu-still').show();
+    }
 });
 
 function playHadouken() {
